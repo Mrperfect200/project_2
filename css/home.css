@@ -1,0 +1,478 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    perspective: 700px;
+    font-family: "pt-sans",sans-serif;
+}
+header{
+    height: 80px;
+}
+
+.container{
+    height: 100px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+
+}
+.header-content{
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+nav > ul  {
+    display: flex; 
+    
+}
+
+nav > ul > li {
+    list-style: none;
+    margin: 5px 25px;
+    font-size: 20px;
+}
+nav > ul > li:hover{
+    border-bottom: 2px solid black;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: #7b5244;
+}
+
+.list-icon > ul{
+    display: flex;
+      
+}
+.list-icon > ul > li {
+    list-style-type: none;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.list-icon > ul > li span{
+    font-size: 20px;
+}
+
+.dropdown-menu{
+    position:absolute;
+    display: flex;
+    margin: 10px ;
+    gap: 30px;
+    border: 2px solid  #7b5244;
+    border-radius: 20px;
+    height: 150px;
+    width: 450px;
+    padding: 15px ;
+    visibility: hidden;
+    transition: 0.5s;
+    transform: scale(0,0);
+    background-color: white;
+}
+.drop-down:hover .dropdown-menu{
+    visibility: visible;
+    transform: scale(1,1);
+}
+
+.dropdown-menu > ul > li {
+    list-style-type: none;   
+}
+
+.dropdown-menu > ul > li > a {
+    text-decoration: none;
+    color:#7b5244 ;
+}
+
+/* main section  */
+
+main{
+    height: 75vh;
+    width: 80%;
+    
+    margin: auto;
+    background-image: url(../images/main-banner-1-1600x700.jpg);
+    background-size: cover;
+}
+
+/* section  ==> special category */
+
+.cat-header{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0px;
+    
+    
+}
+.cat-title{
+    font-size: 30px;
+}
+
+.cat-line{
+    background-color: #7b5244;
+    width: 100px;
+    height: 3px;
+    margin: 10px auto;
+    transition: 0.5s;
+    
+}
+
+.cat-header:hover .cat-line{
+    width: 150px;
+}
+
+.cat-container{
+    width: 80%;
+    margin: auto;
+}
+.cat-items{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.cat-item{
+    width: 300px;
+    height: 370px;
+    position: relative;
+}
+
+.cat-item img{
+   height: 300px;
+   width: 300px;
+}
+.cat-item-subtitle{
+    margin-top: 10px;
+    color: grey;
+    font-weight: 100;
+    font-size: large;
+}
+.cat-item-title{
+    font-size: 20px;
+}
+
+.cat-item-icon{
+    width: 40px;
+    height: 40px;
+    background-color:brown;
+    font-size: 30px;
+    padding: 5px 12px;
+    position: absolute;
+    right: 0px;
+    bottom:10px;
+    visibility: hidden;
+    transition: 0.5;
+    color: white;
+
+}
+.cat-item:hover .cat-item-icon{
+    visibility: visible;
+}
+
+
+/* disaccount */
+
+.disaccount{
+   
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+   
+}
+
+.disaccount-item1 {
+    width: 600px;
+    height: 300px;
+    border: 2px solid rgba(0, 0, 0, 0);
+    background-color: #f7f3ef;
+}
+
+.disaccount-item1-top{
+    width: 100%;
+    position: relative;
+
+}
+
+.disaccount-item1-top .top-icon{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    top: 15px;
+    left: 15px;
+    color: #7b5244;
+}
+
+.disaccount-item1-top .top-info{
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    color: #7b5244;
+}
+.dec-title{
+    color: black;
+}
+
+.dis-middle{
+    margin-top: 80px;
+    margin-left: 15px;
+    line-height: 25px;
+    color:black;
+    font-size: 17px;
+    font-family: "pt-sans",sans-serif;
+    width: 90%;
+
+}
+
+.lines{ 
+    
+    position: relative;
+    left: 400px;
+    top: 60px;
+
+}
+
+.lines > span {
+    width: 50px;
+    height: 2px;
+    background-color:#7b5244 ;
+    display: inline-block;
+    margin: 5px;
+}
+
+
+.disaccount-item2{
+    width: 280px;
+    height: 300px;
+    background-image: url(../images/cms-banner-1.jpg);
+    background-size: cover;
+    transition:  0.5s;
+    
+    
+}
+
+.item2-info{
+    padding: 20px 15px;
+}
+.item2-info h4{
+    font-size: 20px;
+    color:#7b5244 ;
+}
+
+.disaccount-item2:hover{
+   transform: scale(1.1 ,1.1);
+}
+
+/* icons section */
+
+.cat-icons{
+    width: 100%;
+    display: flex;
+    
+}
+
+.cat-icon-item{
+    width: 20%;
+    text-align: center;
+    border-right: 1px solid black
+    ;
+    
+}
+
+.cat-icon1{
+   width: 40px;
+   height: 40px;
+   background-image: url(../images/service-icon.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   margin: auto;
+   transition: 0.5s;
+   
+}
+
+.cat-icon-info{
+    margin-top: 10px;
+}
+.cat-icon-item:hover .cat-icon1{
+    background-position: center -90px ;
+}
+
+.cat-icon-info span{
+    color: gray;
+}
+.cat-icon2{
+    width: 40px;
+   height: 40px;
+   background-image: url(../images/service-icon.png);
+   background-repeat: no-repeat;
+   background-size: cover ;
+   background-position: center -175px ;
+   margin: auto;
+   transition: 0.5s;
+}
+.cat-icon-item:hover .cat-icon2{
+    background-position: center -263px;
+}
+
+.cat-icon3{
+    width: 40px;
+   height: 40px;
+   background-image: url(../images/service-icon.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center -350px;
+   margin: auto;
+   transition: 0.5s;
+}
+.cat-icon-item:hover .cat-icon3{
+    background-position: center -437px;
+}
+
+.cat-icon4{
+    width: 40px;
+   height: 40px;
+   background-image: url(../images/service-icon.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center -528px;
+   margin: auto;
+   transition: 0.5s;
+}
+.cat-icon-item:hover .cat-icon4{
+    background-position: center -615px;
+}
+.cat-icon5{
+    width: 40px;
+   height: 40px;
+   background-image: url(../images/service-icon.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center -707px;
+   margin: auto;
+   transition: 0.5s;
+}
+.cat-icon-item:hover .cat-icon5{
+    background-position: center -793px;
+}
+hr{
+    margin: auto;
+    width: 80%;
+    margin-top: 70px;
+}
+
+
+/* products */
+
+.product-header{
+    width: 80%;
+    height: 30px;
+    margin: 6rem auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+.product-line{
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: #7b5244;
+    transition: 0.5s;
+}
+
+.product-header:hover .product-line{
+    width: 150px;
+}
+
+.product-container{
+    width: 80%;
+    margin: auto;
+}
+
+.product-list ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.product-list ul li{
+    list-style-type: none;
+
+}
+
+.product-items{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-gap: 10px 10px;
+}
+.product-img{
+    position: relative;
+}
+
+.chair{
+    position: absolute;
+}
+
+.overlay-img , .social-icon{
+    position: absolute;
+}
+.product-item{
+    position: relative;
+    width: 385px;
+    height: 570px;
+   
+   
+}
+
+.product-info{
+    position: absolute;
+    top: 29rem;
+}
+
+.overlay{
+    transform: scaleX(0);
+    transition: 0.2s;
+    
+
+}
+
+.product-item:hover .overlay{
+    transform: scaleX(1);
+    opacity: 0.9;
+}
+
+
+.social-icon{
+   margin: 200px 100px;
+
+}
+
+.social-icon li {
+    list-style-type: none;
+    font-size: 40px;
+    display: inline-block;
+    margin-left: 15px;
+    color: #7b5244;
+}
+
+.product-info .yellow{
+    color: yellow;
+}
+.product-info {
+    line-height: 30px;
+}
+
+.product-info h2{
+    font-size: 20px;
+}
+
